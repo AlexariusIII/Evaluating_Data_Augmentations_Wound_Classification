@@ -1,0 +1,38 @@
+# Data configuration
+data_root: "data"  # Root directory for datasets
+checkpoint_dir: "checkpoints"  # Directory for saving model checkpoints
+
+# Training configuration
+seed: 42
+batch_size: 256
+learning_rate: 0.0001
+weight_decay: 0.01
+num_epochs: 50
+
+# Weights & Biases configuration
+use_wandb: false  # Set to true to enable wandb logging
+wandb_project: "WoundAug"  # Project name for wandb
+wandb_entity: null  # Your wandb username (optional)
+
+# Model configuration
+model_config:
+  resnet18:
+    pretrained: true
+  convnext_tiny:
+    pretrained: true
+  efficientV2_s:
+    pretrained: true
+  timm_effnet_s:
+    pretrained: true
+    model_name: "tf_efficientnetv2_s.in21k"
+
+# Dataset configuration
+dataset_config:
+  medetec:
+    image_dir: "images"
+    train_file: "train.csv"
+    test_file: "test.csv"
+  azh_wound_dataset:
+    image_dir: "images"
+    train_file: "train.csv"
+    test_file: "test.csv" 
