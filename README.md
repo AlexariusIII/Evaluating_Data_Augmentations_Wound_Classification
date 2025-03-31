@@ -56,20 +56,12 @@ Available augmentation types:
 - Triple augmentations: `geo_photo_elastic`, `geo_photo_cutout`, `geo_elastic_cutout`, `photo_elastic_cutout`
 - Quadruple augmentation: `geo_photo_elastic_cutout`
 
-### Visualization
-
-To visualize the augmentation effects:
-
-```bash
-jupyter notebook visualize_augmentations.ipynb
-```
 
 ## Project Structure
 
 - `train.py`: Main training script
 - `woundaug_transforms.py`: Implementation of augmentation techniques
 - `dataset.py`: Dataset loading and preprocessing
-- `visualize_augmentations.ipynb`: Visualization notebook
 - `optuna_search_*.py`: Hyperparameter optimization scripts
 - `config.yaml`: Configuration file for training parameters
 
@@ -112,19 +104,6 @@ Our comprehensive evaluation shows that:
 
 For detailed results and analysis, please refer to our paper.
 
-## Citation
-
-If you use this code in your research, please cite our paper:
-
-```bibtex
-@article{brehmer2024woundaug,
-  title={WoundAug: A Comprehensive Benchmark for Wound Image Augmentation},
-  author={Brehmer, Alexander and others},
-  journal={[Journal Name]},
-  year={2024},
-  publisher={[Publisher]}
-}
-```
 
 ## License
 
@@ -133,12 +112,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - We thank the contributors of the datasets used in this study
-- Special thanks to the PyTorch and Albumentations teams for their excellent libraries
-- This work was supported by [Your Institution/Organization]
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+- This work was supported by Institue of Artifical Intelligence - Essen.
 
 ## Contact
 
